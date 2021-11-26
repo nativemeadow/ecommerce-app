@@ -1,0 +1,26 @@
+.top-bar {
+  grid-area: top-bar;
+  width: 100%;
+  background: #ECE8E1;
+  height: 2.44rem;
+  display: flex;
+  justify-content: right;
+  padding-right: 1rem;
+}
+
+.top-bar__items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.top-bar__item {
+  margin: 0 .5rem;
+}
+
+.top-bar__item a {
+  color: #231F20
+}

@@ -41,3 +41,10 @@ li a {
   font-weight: bold;
   text-decoration: none;
 }
+
+#root {
+  display: grid;
+  grid-template-rows: 2.44rem 6.06rem auto fit-content(5rem);
+  grid-template-areas: "top-bar" "header" "main" "footer";
+  justify-items: center;
+}
