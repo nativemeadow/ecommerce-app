@@ -1,8 +1,8 @@
 import React from 'react';
 
-import classes from './header.module.css';
+import classes from './TopBar.module.css';
 
-const Header: React.FC = () => {
+const TopBar: React.FC = () => {
 
   return (
     <div className={classes['top-bar']}>
@@ -14,4 +14,4 @@ const Header: React.FC = () => {
   )
 }
 
-export default Header;
+export default TopBar;

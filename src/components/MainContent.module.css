@@ -1,0 +1,8 @@
+.main-content {
+  grid-area: main;
+  width: 100%;
+  background: #fff;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}

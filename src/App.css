@@ -1,6 +1,6 @@
 .main-grid {
   display: grid;
-  grid-template-rows: 2.44rem 6.06rem auto fit-content(5rem);
-  grid-template-areas: "top-bar" "header" "main" "footer";
+  grid-template-rows: 2.44rem 6.06rem minmax(70em, auto) fit-content(10rem) fit-content(10rem) fit-content(5rem) ;
+  grid-template-areas: "top-bar" "header" "main" "newsletter-signup" "connect" "footer";
   justify-items: center;
 }

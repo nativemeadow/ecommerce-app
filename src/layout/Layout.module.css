@@ -1,0 +1,8 @@
+.main-content {
+  grid-area: footer;
+  width: 100%;
+  background: #ECE8E1;
+  height: auto;
+  display: flex;
+  justify-content: right;
+}

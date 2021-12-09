@@ -1,0 +1,8 @@
+.main-footer {
+  grid-area: footer;
+  width: 100%;
+  background: #ECE8E1;
+  height: 2.44rem;
+  display: flex;
+  justify-content: center;
+}

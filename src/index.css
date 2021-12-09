@@ -36,8 +36,17 @@ h1, h2, h3, h4 {
   font-family: 'Aleo', serif;
 }
 
-
 li a {
   font-weight: bold;
   text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 160%;
+  font-family: 'Raleway', sans-serif;  
 }
