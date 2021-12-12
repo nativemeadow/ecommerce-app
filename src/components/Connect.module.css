@@ -138,6 +138,7 @@ h3.component-title {
 
 .address--hours {
   grid-area: address-hours;
+  align-self: start;
 }
 
 .affiliates--section {

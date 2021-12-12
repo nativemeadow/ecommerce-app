@@ -36,8 +36,8 @@ const Connect: React.FC = () => {
           </ul>
           <h3 className={addressTitle}>Address</h3>
           <div className={classes['address--hours']}>
-            <p className={classes['address__detail']}>345 Shoreway Road<br/>
-              San Carlos, CA 94070</p>
+            <address className={classes['address__detail']}>345 Shoreway Road<br/>
+              San Carlos, CA 94070</address>
               <p>P 650&nbsp;.&nbsp;364&nbsp;.&nbsp;1730
               <br />F 650.&nbsp;361&nbsp;.&nbsp;1933</p>
               <h3 className={classes['component-title']}>Hours:</h3>

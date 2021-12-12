@@ -36,6 +36,10 @@ h1, h2, h3, h4 {
   font-family: 'Aleo', serif;
 }
 
+h2 {
+  font-size: 1.88rem;
+}
+
 li a {
   font-weight: bold;
   text-decoration: none;
@@ -45,8 +49,12 @@ button {
   cursor: pointer;
 }
 
-p {
+p, address {
   font-size: 1rem;
   line-height: 160%;
   font-family: 'Raleway', sans-serif;  
+}
+
+address {
+  font-style: normal;
 }
