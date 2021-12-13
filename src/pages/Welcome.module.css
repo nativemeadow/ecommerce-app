@@ -1,0 +1,222 @@
+.main {
+  grid-area: main;
+  overflow: auto;
+}
+
+.banner-container {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-areas: "banner" "location" "mission" "products" "search" "resources";
+}
+
+.banner {
+  grid-area: banner;
+  background: url('https://www.lyngsogarden.com/wp-content/uploads/2021/04/lyngso-001-website-001-home-v003b-hero_11-scaled.jpg');
+  background-size: cover;
+  padding: 115px 0;
+  width: 100%;
+  max-width: 1300px;
+  margin: auto;
+  height: 510px;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.banner-browse {
+  font-size: 16px;
+  line-height: 160%;
+  font-family: 'Raleway', sans-serif;
+  padding-left: 5rem;
+}
+
+.banner-browse__link {
+  padding: 15px 30px;
+  border: 2px solid #A1081C;
+  margin: 36px auto 20px;
+  font-family: 'Aleo', serif;
+  font-weight: 700;
+  border-radius: 5px;
+  display: inline-block;
+  font-size: 18px;
+  background: #A1081C;
+  color: #fff;
+  opacity: 1;
+  transition: opacity 0.7s;
+  -webkit-transition: opacity 0.7s;
+  -moz-transition: opacity 0.7s;
+  -o-transition: opacity 0.7s;
+  text-decoration: none;
+}
+
+.banner-header > h1 {
+  font-size: 50px;
+  color: #fff;
+  font-weight: 700;
+  font-family: 'Aleo',serif;
+  padding-left: 5rem;
+}
+
+.location {
+  grid-area: location;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .5rem;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-text-size-adjust: 100%;
+  font-family: 'Raleway', sans-serif;
+  color: #4d4d4d;
+  font-size: 14px;
+  line-height: normal;
+  font-weight: normal;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  max-width: 1300px;
+  width: 100%;
+  margin: auto;
+  padding: 0;
+  background: url('https://www.lyngsogarden.com/wp-content/uploads/2016/09/google-map.png') no-repeat center center #F2F2F2;
+  background-size: cover;
+  position: relative;
+}
+
+.location__title {
+  margin-top: 50px;
+  font-family: 'Aleo',serif;
+  font-weight: 800;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.location__address, .location__map {
+  font-size: 16px;
+  margin-bottom: 40px;
+  font-weight: 500;
+}
+
+.location__map {
+    font-size: 16px;
+    min-height: 30px;
+    font-weight: 500;
+}
+
+.location__link {
+  color: #A8081E;
+  background: url('https://www.lyngsogarden.com/wp-content/uploads/2016/09/locate.png') no-repeat center right;
+  background-size: 30px;
+  padding-right: 40px;
+  min-height: 25px;
+  display: inline-block;
+}
+
+.location:before {
+    background: url("https://www.lyngsogarden.com/wp-content/uploads/2016/09/location.png") no-repeat;
+    background-position: center top;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -27px;
+    max-width: 48px;
+    left: 50%;
+    transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    background-size: 80%;
+}
+
+.lyngso-mission {
+  grid-area: mission;
+  padding-top: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1300px;
+  width: 98%;
+  margin: 0 auto;
+  outline: none;
+}
+
+.lyngso-mission > h2 {
+  margin-bottom: 20px;
+  line-height: 160%;
+  font-size: 30px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.lyngso-mission > p {
+  font-weight: normal;
+  text-align: center;
+  margin: 0 0 10px;
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 25px;
+} 
+
+.search-section {
+  grid-area: search;
+  margin: 0 auto;
+  margin-bottom: 140px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  max-width: 1140px;
+  width: 98%;
+  outline: none;
+}
+
+.search-section h2 {
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Aleo', serif;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+}
+
+.search-section__form {
+  margin-top: 0em;
+}
+
+.search__form {
+  display: flex;
+}
+
+.search-section__form input[type="search"] {
+  width: 65%;
+  text-align: left;
+  display: inline-block;
+  color: #333333;
+  border: 3px solid #CACACA;
+  height: 50px;
+  border-radius: 8px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+}
+
+.search-section__form .search button {
+  width: 34%;
+  text-align: center;
+  padding: 12px 30px;
+  border: 2px solid #A1081C;
+  margin: auto;
+  font-family: 'Aleo', serif;
+  font-weight: 700;
+  border-radius: 5px;
+  display: inline-block;
+  font-size: 18px;
+  background: #A1081C;
+  color: #fff;
+  opacity: 1;
+  transition: opacity 0.7s;
+  -webkit-transition: opacity 0.7s;
+  -moz-transition: opacity 0.7s;
+  -o-transition: opacity 0.7s;
+}
