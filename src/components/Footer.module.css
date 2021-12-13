@@ -1,8 +1,30 @@
-.main-footer {
+.layout {
   grid-area: footer;
   width: 100%;
   background: #ECE8E1;
-  height: 2.44rem;
+}
+
+.wrapper {
+  padding: 1.25rem 0 3.5rem 0;
+  max-width: 1300px;
+  width: 98%;
+  margin: 0 auto;
+}
+
+.content {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+}
+
+.items {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: .5rem;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.link {
+  color: #000;
 }
