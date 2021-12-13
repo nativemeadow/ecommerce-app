@@ -32,7 +32,7 @@ const Connect: React.FC = () => {
     <Fragment>
       <section className={classes['signup__section']}>
         <div  className={classes['signup__flex']}>
-          <h2 className={classes['newsletter__title']}>Sign Up for our<br/>Newsletter</h2>
+          <h2 className={classes['newsletter__title']}>Sign Up for our Newsletter</h2>
           <div className={classes['signup__wrapper']}>
             <form onSubmit={signUpHandler}  aria-label="sign up for our newsletter" className={classes['newsletter__form']}>
                 <div className={classes['checkboxes']}>
