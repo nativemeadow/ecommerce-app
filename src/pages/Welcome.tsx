@@ -12,23 +12,27 @@ const Sustainability: React.FC = () => {
           <div className={classes['banner-browse']}>
             <a href="#" className={classes['banner-browse__link']}>Browse Our Products</a>
           </div>
+          <div className={classes['small-banner__image--wrapper']}>
+            {/* <img className={classes['small-banner_image']} src="http://www.lyngsogarden.com/wp-content/uploads/2021/04/lyngso-001-website-001-home-v003b-mobile-hero_11.jpg" /> */}
+          </div>  
       </div>
+
       <section className={classes['location']}>
         <div className={classes['location__title']}>Our location</div>
         <div className={classes['location__address']}>345 Shoreway Road, San Carlos, CA 94070</div>
         <div className={classes['location__map']}>First time at Lyngso? Familiarize yourself with our 
-          <a className={classes['location__link']} 
+          <a className={classes['location__link-image']} 
           href="https://www.lyngsogarden.com/wp-content/uploads/2017/04/Lyngso-Site-Map-Draft-10-05-2016.pdf" 
           target="_blank">location site map</a>
         </div>
       </section>
       <div className={classes['lyngso-mission']} >
-        <h2>
+        <h2 className={classes['lyngso-mission__heading']}>
           Landscape beautifully. Landscape sustainably.<br />
           Landscape Lyngso.
         </h2>
-        <p>Whether you’re a contractor working on a large landscaping project, or a homeowner improving the soil in your garden, Lyngso has all the landscaping and gardening materials to make your corner of the world more beautiful.</p>
-        <p>Many of the people you’ll work with at Lyngso have been with us for over 20 years. Based in San Carlos, we are family-run and employee-owned business.</p>
+        <p className={classes['lyngso-mission__text']}>Whether you’re a contractor working on a large landscaping project, or a homeowner improving the soil in your garden, Lyngso has all the landscaping and gardening materials to make your corner of the world more beautiful.</p>
+        <p className={classes['lyngso-mission__text']}>Many of the people you’ll work with at Lyngso have been with us for over 20 years. Based in San Carlos, we are family-run and employee-owned business.</p>
       </div>  
 
     </article>

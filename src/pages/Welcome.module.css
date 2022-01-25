@@ -11,22 +11,29 @@
 
 .banner {
   grid-area: banner;
-  background: url('https://www.lyngsogarden.com/wp-content/uploads/2021/04/lyngso-001-website-001-home-v003b-hero_11-scaled.jpg');
-  background-size: cover;
-  padding: 115px 0;
-  width: 100%;
-  max-width: 1300px;
-  margin: auto;
-  height: 510px;
+  display: flex;
+  flex-direction: column;
   font-weight: bold;
   font-size: 50px;
 }
 
+.small-banner__image--wrapper {
+  height: 243px;
+  width: 320px;
+}
+
+.small-banner_image {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
 .banner-browse {
-  font-size: 16px;
+  font-size: 1rem;;
   line-height: 160%;
   font-family: 'Raleway', sans-serif;
-  padding-left: 5rem;
+  padding-left: 1rem;
 }
 
 .banner-browse__link {
@@ -50,26 +57,22 @@
 
 .banner-header > h1 {
   font-size: 50px;
-  color: #fff;
+  color: #000;
   font-weight: 700;
   font-family: 'Aleo',serif;
-  padding-left: 5rem;
+  padding-left: 1rem;
 }
 
 .location {
   grid-area: location;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
-  gap: .5rem;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   -webkit-text-size-adjust: 100%;
   font-family: 'Raleway', sans-serif;
   color: #4d4d4d;
-  font-size: 14px;
-  line-height: normal;
-  font-weight: normal;
-  box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   max-width: 1300px;
@@ -82,16 +85,16 @@
 }
 
 .location__title {
-  margin-top: 50px;
+  margin-top: 3.13rem;
   font-family: 'Aleo',serif;
   font-weight: 800;
-  font-size: 18px;
-  margin-bottom: 10px;
+  font-size: 1.5rem;
+  margin-bottom: 0.63rem;
 }
 
 .location__address, .location__map {
-  font-size: 16px;
-  margin-bottom: 40px;
+  font-size: 1rem;
+  margin-bottom: 1rem;
   font-weight: 500;
 }
 
@@ -99,34 +102,44 @@
     font-size: 16px;
     min-height: 30px;
     font-weight: 500;
+    margin-bottom: 2.5rem;
 }
 
-.location__link {
+.location__link-image {
   color: #A8081E;
   background: url('https://www.lyngsogarden.com/wp-content/uploads/2016/09/locate.png') no-repeat center right;
   background-size: 30px;
   padding-right: 40px;
   min-height: 25px;
   display: inline-block;
+  margin-left: .3rem;
+}
+
+.location__link-image--hide {
+  display: none;
+}
+
+.location__link-image--display {
+  display: inline-block;
 }
 
 .location:before {
-    background: url("https://www.lyngsogarden.com/wp-content/uploads/2016/09/location.png") no-repeat;
-    background-position: center top;
-    content: '';
-    display: block;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: -27px;
-    max-width: 48px;
-    left: 50%;
-    transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
-    background-size: 80%;
+  background: url("https://www.lyngsogarden.com/wp-content/uploads/2016/09/location.png") no-repeat;
+  background-position: center top;
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: -27px;
+  max-width: 48px;
+  left: 50%;
+  transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  background-size: 80%;
 }
 
 .lyngso-mission {
@@ -156,8 +169,19 @@
   font-weight: 500;
   font-size: 18px;
   margin-bottom: 25px;
-  width: 66.6667%;
+  width: 57%;
 } 
+
+.product-categories h2:after, .location__address:after {
+  content: '';
+  display: block;
+  width: 60px;
+  background: #A1081C;
+  margin: 0 auto;
+  margin-top: 27px;
+  border: 1px solid #A1081C;
+  border-radius: 25px;
+}
 
 .search-section {
   grid-area: search;
@@ -220,4 +244,31 @@
   -webkit-transition: opacity 0.7s;
   -moz-transition: opacity 0.7s;
   -o-transition: opacity 0.7s;
+}
+
+@media screen and (min-width: 481px) {
+
+  .banner {
+    background: url('https://www.lyngsogarden.com/wp-content/uploads/2021/04/lyngso-001-website-001-home-v003b-hero_11-scaled.jpg');
+    background-size: cover;
+    padding: 7.19rem 0;
+    width: 100%;
+    max-width: 1300px;
+    margin: auto;
+    height: 510px;
+  }
+
+  .banner-header > h1 {
+    color: #fff;
+    padding-left: 5rem;
+  }
+
+  .banner-browse {
+    color: #fff;
+    padding-left: 5rem;
+  }
+
+  .small-banner__image--wrapper {
+    display: none;
+  }
 }
